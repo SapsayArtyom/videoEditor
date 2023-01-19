@@ -1,0 +1,99 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'MuseoSlab-500';
+        background: url('../assets/web_wind_bg_w.png') no-repeat center center fixed;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-size: auto 100vh;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    /* .window{ 
+        width: 500px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        user-select:none
+    }
+
+.windowFrame,
+.windowView{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top:-40px
+}
+
+
+.windowFrame{
+    z-index: 2;
+}
+.windowFrame img,
+.windowView img{
+    position: absolute;
+    padding: 0;
+    width: 500px;
+}
+
+.windowView img{
+    z-index: 1;
+    width: 450px;
+} */
+
+    canvas {
+        position: absolute;
+        max-width: 100%;
+        top: 50%;
+        left: 50%;
+        max-height: 100%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+    }
+
+    div>canvas {
+        position: fixed;
+        transform: unset;
+        top: 0;
+        left: 0;
+    }
+
+    /* .rotateCanvas{ */
+        body{ 
+        /* transform: rotate(90deg); */
+        /* -webkit-transform:;
+        -moz-transform:;
+        -ms-transform:;
+        -o-transform:; */
+     }
+   
+     /* тзь */
+
+     .gameBlock{
+         background-color: rgba(0, 0, 0);
+         height: 100vh;
+         width: 100vw;
+         z-index: 50;
+         display: none;
+         /* display: flex; */
+         justify-content: center;
+         align-items: center;
+     }
+
+     .gameBlock-info{
+         font-size: 40px;
+         color: white;
+     }
+
+
+    @media(max-width: 1080px) and (max-height: 1920px) {
+        canvas {
+            top: 50%;
+        }
+    }
